@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "http://43.205.64.114:3000/static/css/main.eda4c081.css",
+    "main.js": "http://43.205.64.114:3000/static/js/main.e4384c20.js",
+    "static/js/377.26cc0020.chunk.js": "http://43.205.64.114:3000/static/js/377.26cc0020.chunk.js",
+    "static/media/Roboto-Medium.ttf": "http://43.205.64.114:3000/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "http://43.205.64.114:3000/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Black.ttf": "http://43.205.64.114:3000/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Bold.ttf": "http://43.205.64.114:3000/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/rightDoubleChevron.svg": "http://43.205.64.114:3000/static/media/rightDoubleChevron.4463a6c6c9c8005a2fff701994d63c01.svg",
+    "index.html": "http://43.205.64.114:3000/index.html",
+    "static/media/rightChevron.svg": "http://43.205.64.114:3000/static/media/rightChevron.48828f38bdb34887ce059b843640c05a.svg",
+    "static/media/leftChevron.svg": "http://43.205.64.114:3000/static/media/leftChevron.105d48aae443501fcba92fda6c19883b.svg",
+    "static/media/leftDoubleChevron.svg": "http://43.205.64.114:3000/static/media/leftDoubleChevron.20327d2726a7513da0f6536987f381d2.svg",
+    "main.eda4c081.css.map": "http://43.205.64.114:3000/static/css/main.eda4c081.css.map",
+    "main.e4384c20.js.map": "http://43.205.64.114:3000/static/js/main.e4384c20.js.map",
+    "377.26cc0020.chunk.js.map": "http://43.205.64.114:3000/static/js/377.26cc0020.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eda4c081.css",
+    "static/js/main.e4384c20.js"
+  ]
+}

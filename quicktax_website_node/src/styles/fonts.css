@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../assets/fonts/Roboto/Roboto-Black.ttf);
+}
+
+.rdt_TableCell {
+  font-size: 12px;
+}
+.rdt_TableCell div:first-child {
+  white-space: unset !important;
+}
+
+.wrapper {
+  z-index: 100 !important;
+}
+/*Table CSS*/
+.dt-buttons{
+  float: left;
+  margin: 20px 16px 0;
+}
+.dt-buttons button{
+  background-color: #DBDEE1;
+  border:1px solid #CFD4D7;
+  padding:4px;
+  color:#07131C;
+  border-radius: 2px;
+}
+.dataTables_wrapper{
+  
+  width:100%;
+}
+.dataTable{
+  font-size: 12px;
+  width:100%;
+  color:#2C2C2C;
+  border-collapse: collapse;
+  border:1px solid #ddd;
+  
+}
+.dataTable th, .dataTable td{
+  font-family: 'Roboto-Regular';
+  text-align: left;
+  border-right: 1px solid rgb(218, 224, 235);
+  
+}
+.dataTable th{
+  background-color: #DBDEE1;
+  font-weight: 400;
+  line-height: 16px;
+  padding:8px 4px;
+  text-align: center;
+  white-space: nowrap;
+  
+}
+.dataTable tr:hover{
+  background-color: #a2c4e250;
+}
+.dataTable .odd{
+  background-color: #f4f5f7;
+}
+.dataTable td{
+  padding:16px 4px;
+  border-bottom: 1px solid #E7E9EB;
+  color:#07131C;
+  /* min-width: 80px; */
+  word-wrap:normal;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.dataTables_info, .dataTables_length, .dataTables_paginate{
+  font-size:14px;
+  display: flex;
+  margin-top:16px;
+  height: 40px;
+  float:right
+}
+.dataTables_info{
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right:16px;
+  float:right;
+}
+.dataTables_length{
+  justify-content: flex-end;
+  align-items: center;
+  padding-right:16px;
+  float:left
+}
+.dataTables_paginate{
+  justify-content: flex-start;
+  font-family: 'Roboto-Medium';
+  width:auto;
+  margin-top:16px;
+}
+.dataTables_paginate, .dataTables_paginate span{
+  display:flex
+}
+.dataTables_filter{
+  margin-bottom:16px
+}
+.dataTables_filter input, .dataTables_filter select{
+  border:1px solid #CFD4D7;
+  padding:5px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  color:#000;
+}
+input, select{
+  border-color: #CFD4D7 !important;
+  background-color: #fff;
+}
+input::placeholder{
+  color:#ddd !important;
+}
+.dataTables_paginate a{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  border:1px solid #E7E9EB;
+  background-color: #f9f9f9;
+  border-left:0;
+  cursor: pointer;
+  color:#6E7D88;
+}
+.dataTables_paginate a:not(.current):hover{
+  background-color: #DBDEE1;
+  color:#07131C;
+}
+.dataTables_paginate .current{
+  color:#1C64F2;
+  background-color:#E1EFFE;
+}
+.paginate_button.first, .paginate_button.last{
+  width:40px;
+}
+.paginate_button.first{
+  border-left:1px solid #E7E9EB;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.paginate_button.last{
+  border-left:0px solid #E7E9EB;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/*End of*/
+button{
+  color:#000
+}
+.verifyAndConfirm, .verifyAndConfirmDelete{
+  background-color: #115d97;
+  color:#fff;
+  padding:5px;
+  color:#fff;
+  width:90px;
+  font-size:11px;
+  opacity:0.8
+}
+.verifyAndConfirm:hover, .verifyAndConfirmDelete:hover{
+  opacity:1
+}
+.verifyAndConfirmDelete{
+  margin-top:4px;
+  background-color: #973e11;
+}
+.react-datepicker__input-container input{
+width:100%
+}

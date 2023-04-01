@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Extraction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/admin_style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/fixedheader/3.1.8/js/dataTables.fixedHeader.min.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.print.min.js"></script>
+
+    <script src="js/admin_script.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="authenticationForm">
+        <h2>
+            Authenticate
+        </h2>
+        <form name="authentication-form" onsubmit='return submitCreds(event);'>
+            <input type="text" id="username" placeholder="username" />
+            <input type="password" id="password" placeholder="password" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <section class="py-extract py-extract-admin">
+        <section id="admin">
+            <div class="tabs-holder">
+                <button id="tabButton1" class="tabs" onclick="tab(1, event)" data-translate="AdminUpload">Upload</button>
+                <button id="tabButton2" class="tabs" onclick="tab(2,event)" data-translate="AdminViewAllProcessedData">View All Processed Data</button>
+            </div>
+            <div class="overlay">
+
+                <div class="content tab-content" id="tab1">
+                    <div class="inner-content" id="section-UploadPDF">
+                        <div class="top-bar">
+                            <h2 data-translate="AdminUploadPDF">Upload PDF</h2>
+                        </div>
+                        <div class="form make-flex required-text flex-start">
+                            <form id="uploadForm" enctype="multipart/form-data" onsubmit="return uploadFile(event)">
+                                <select id="fileType">
+                                    <option value="normal" selected>Normal</option>
+                                    <option value="safra">Safra / BTG</option>
+                                </select>
+                                <input type="file" class="full-width" name="fileToUpload" id="fileToUpload" placeholder="Choose PDF *" required>
+                                <!-- id="uploadFile" -->
+                                <button type="submit">
+                                    <ion-icon name="cloud-upload"></ion-icon>
+                                    <span data-translate="AdminUpload">Upload</span>
+                                </button>
+                            </form>
+                            <div id="fileUploadStatus" class="file-upload-status"></div>
+                        </div>
+                    </div>
+                    <div class="inner-content" id="data-table-container">
+                        <div class="top-bar">
+                            <h2 data-translate="AdminFileStatus">File Status <button class="link-button" onclick="printFileUploadStatus()" data-translate="AdminRefresh">Refresh</button>
+                                <select id='pdf_type_clr'>
+                                    <option value='0' selected>All</option>
+                                    <option value='1'>Futuro</option>
+                                    <option value='2'>Vista, Termo, De opções</option>
+                                </select>
+                                <button class="link-button" onclick="cleardb()" data-translate="AdminClear">Clear Storage</button>
+                            </h2>
+                        </div>
+                        <div class="data-table-container" id="data-table-inner-container">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content tab-content" id="tab2">
+                    <div class="top-bar">
+                        <h2 data-translate="AdminAllProcessedAndConfirmedData"> All Processed & Confirmed Data</h2>
+                        <div style='padding:5px;'>
+                            <select id='pdf_data' onchange="showAllData()">
+                                <option value='type1' selected>Futuro</option>
+                                <option value='type2'>Vista, Termo, De opções</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inner-content" id="viewAllData">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+$containerbg: #fafaff;
+$addButtonBg: #ffb000;
+$fontStyleOne: 'Roboto', sans-serif;
+$fontStyleTwo: 'IBM Plex Sans', sans-serif;
+$finishedClr: #0b8457;
+$finishedBgClr: rgba(11, 132, 87, 0.1);
+$pendingClr: #dc3545;
+$pendingBgClr: rgba(220, 53, 69, 0.1);
+$bravoClr: #1e2a78;
+$bravoBgClr:  rgba(30, 42, 120, 0.1);
+$inactiveListElementColor: rgba(233, 236, 239, 0.5);
+$activeListElementColor: #D4DFFA;
+$grayButtonBgColor: #E9ECEF;
+$yellowBtnBgColor: #ffb000;
+$redBtnBgColor: #D02A2A;
+$titleBgColor: rgba(212, 212, 217, 0.7);
+
+
+
+
+
+
+//mixin for label
+
+@mixin  label($fontSize) {
+    color: #000000;
+    font-size: $fontSize;
+    font-family: $fontStyleTwo;
+    font-weight: 500;
+    line-height: 29px;
+    margin-bottom: 3px;
+}
+
+//mixin for icon container
+
+@mixin iconContainer($color) {
+    width: 24px;
+    height: 24px;
+    background-color:$color;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+//mixin for container
+
+@mixin container($width, $height, $borderRadius, $color) {
+    width: $width;
+    height: $height;
+    border-radius: $borderRadius;
+    background-color: $color;
+}
+
+
+//mixin for input and label container
+
+@mixin inputLabelContainer {
+    display: flex;
+    flex-direction: column;
+    label{
+        // margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+    }
+    input{        
+        border: 0.5px solid rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+    }
+}
+
+
+//mixin for input and img container
+
+@mixin inputImgContainer {
+    input{
+        border-style: none;
+        outline: none;
+        flex: 1;
+        width: 171px;
+        height: 32px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    div{
+        width:32px;
+        height: 34px;
+        background-color: #d4d4d9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+}
+
+//mixin for list container
+
+@mixin listElementContainer($width, $height, $color) {
+    width: $width;
+    height: $height;
+    background-color: $color;    
+}
+
+//mixin for label and input
+
+@mixin formLabelInput($width, $height) {
+    display: flex;
+    flex-direction: column;
+    label{
+        margin-bottom: 5px;
+    }
+    input{
+        width: $width;
+        height: $height;
+        border-radius: 4px;
+        background: #ffffff;
+        border: 0.5px solid rgba(28,28,28,0.3);
+        box-sizing: border-box;
+    }
+}
+
+
+//Mixin for the forms in container 2,3 and 4 in desktop 4
+
+@mixin formContainer($width, $height) {
+    display: flex;
+    flex-direction: column;
+    input{
+        padding: 0;
+        width: $width;
+        height: $height;
+        background: #fff;
+        border-radius: 4px;
+        border: 0.5px solid rgba(28, 28, 28, 0.3);
+    }
+    
+}
+
+//mixin for img and input contianer for Taxas and nova
+
+@mixin imgInputContainerTwo($width, $height) {
+    display: flex;
+    border: 0.5px solid rgba(28, 28, 28, 0.3);
+    border-radius: 4px;
+    margin-top: 5px; 
+    input{
+        border-style: none;
+        outline: none;
+        flex: 1;
+        height: $height;
+        width: $width;
+        border-radius: 4px 0px 0px 4px;
+    }
+    .img-bg{
+        width:23px;
+        height: $height;
+        background-color: #d4d4d9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 4px 4px 0px;
+    }
+}

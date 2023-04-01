@@ -1,0 +1,31 @@
+1.	Install python3 latest version
+2.	sudo apt-get install python3-pip
+3.  Install below packages 
+    sudo pip3 install pandas
+    sudo pip3 install sqlalchemy
+    sudo pip3 install pdfrw
+    sudo pip3 install PyPDF2
+    sudo pip3 install selenium
+    sudo pip3 install mysql-connector-python
+    sudo pip3 install pdfminer
+    sudo pip3 install python-dotenv
+    sudo pip3 install openpyxl
+4.	cp pdf2txt.py /usr/local/bin/
+5.  chmod 755 /usr/local/bin/pdf2txt.py
+6.	Install Chrome : 
+    a.	Download latest stable chrome driver from https://chromedriver.chromium.org
+    b.  Copy chromedriver in to the folder where python scripts are available. 
+    b.	Install Google chrome by executing the below commands 
+        sudo apt-get install libnss3 [for chrome dependencies]
+        sudo apt update
+        sudo apt upgrade
+        sudo apt install unzip libnss3 python3-pip
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo apt install ./google-chrome-stable_current_amd64.deb
+        google-chrome-stable –version
+7. Change the complete path of the application (apache_htdocs_quicktax) and complete path of the chrome driver in .env file 
+8. Change PYTHON_HOME, CALC_SERVICE, CALC_MSERVICE, SERVICE (complete path of the python scripts) in cron_calc.sh and cron_parser.sh files. 
+8. Scheduling cron
+  */2 * * * * sh <complete_path_of_the_file>/cron_parser.sh >> <apache_htdocs>/quicktax/cron.log 2>&1
+  */1 * * * * sh <complete_path_of_the_file>/cron_calc.sh >> <apache_htdocs>/quicktax/cron_calc.log 2>&1
+

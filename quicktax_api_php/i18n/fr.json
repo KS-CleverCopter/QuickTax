@@ -1,0 +1,13 @@
+{
+    "FileUploadFailed": "File upload failed!.",
+    "ConfirmWriteToDB": "Confirm & Write to DB",
+    "ClientNoResultsForSimilarProperties": "No Results for previously sold properties that are similar.",
+    "AdminUpload": "Upload",
+    "AdminUploadPDF": "Upload PDF",
+    "AdminViewAllProcessedData": "View all processed data",
+    "AdminAllProcessedAndConfirmedData": "All Processed & Confirmed Data",
+    "AdminFileStatus": "File Status",
+    "AdminRefresh": "Refresh",
+
+    "Required": "* Required"
+}

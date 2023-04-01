@@ -1,0 +1,1541 @@
+::placeholder {
+    color: rgba(0, 0, 0, 0.47);
+    font-style: italic;
+}
+
+body {
+    font-family: "Roboto";
+    color: rgba(0, 34, 108, 0.8);
+    padding: 0;
+    margin: 0;
+    background-color: #555555;
+    font-size: 0.75rem;
+}
+
+[disabled] {
+    opacity: 0.7;
+}
+
+.hide {
+    display: none;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.8rem;
+    padding: 0 16px;
+    font-family: "Helvetica Neue", sans-serif, Arial;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.py-extract input,
+.py-extract select,
+.py-extract button,
+.popupHolder input,
+.popupHolder select,
+.popupHolder button {
+    background-color: white;
+    border-radius: 4px;
+    padding: 6px;
+    color: #737373;
+    border: 0px;
+    -webkit-appearance: none;
+    margin: 0 8px 0 0;
+    transition: 100ms;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.py-extract input ion-icon,
+.py-extract select ion-icon,
+.py-extract button ion-icon,
+.popupHolder input ion-icon,
+.popupHolder select ion-icon,
+.popupHolder button ion-icon {
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.py-extract input.half-width,
+.py-extract select.half-width,
+.py-extract button.half-width,
+.popupHolder input.half-width,
+.popupHolder select.half-width,
+.popupHolder button.half-width {
+    min-width: 100px;
+    width: 100%;
+    flex-shrink: 2;
+}
+
+.py-extract input.full-width,
+.py-extract select.full-width,
+.py-extract button.full-width,
+.popupHolder input.full-width,
+.popupHolder select.full-width,
+.popupHolder button.full-width {
+    width: 100%;
+    min-width: 180px;
+    flex-grow: 1;
+}
+
+.py-extract input:active,
+.py-extract select:active,
+.py-extract button:active,
+.popupHolder input:active,
+.popupHolder select:active,
+.popupHolder button:active {
+    opacity: 0.6 !important;
+}
+
+.py-extract select,
+.popupHolder select {
+    min-width: 40px;
+    background: url(../imgs/caret-down.svg) no-repeat 92% 50%;
+    padding-right: 26px;
+    background-size: 12px;
+}
+
+.py-extract button,
+.popupHolder button {
+    background-color: #0c53a9;
+    color: #fff;
+    font-weight: bold;
+    min-width: 70px;
+    text-align: center;
+    transition: background-color 350ms;
+}
+
+.py-extract button:focus,
+.popupHolder button:focus {
+    outline: 0;
+}
+
+.py-extract button:hover,
+.popupHolder button:hover {
+    background-color: #003688;
+}
+
+.py-extract button:hover ion-icon svg,
+.popupHolder button:hover ion-icon svg {
+    stroke: #fff !important;
+}
+
+.py-extract .make-flex,
+.popupHolder .make-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.py-extract .make-flex-end,
+.popupHolder .make-flex-end {
+    justify-content: flex-end !important;
+}
+
+.py-extract .make-flex-center,
+.popupHolder .make-flex-center {
+    justify-content: center !important;
+}
+
+.py-extract .space-between,
+.popupHolder .space-between {
+    justify-content: space-between;
+}
+
+.py-extract .flex-start,
+.popupHolder .flex-start {
+    justify-content: flex-start;
+}
+
+.py-extract .confirm-action,
+.popupHolder .confirm-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 8px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.py-extract .confirm-action button,
+.popupHolder .confirm-action button {
+    min-width: 150px;
+}
+
+.py-extract {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+
+.py-extract section {
+    width: 100%;
+}
+
+.py-extract-admin {
+    width: calc(100% - 32px);
+    padding: 16px;
+    min-height: calc(100vh - 32px) !important;
+    justify-content: flex-start;
+    display: none;
+}
+
+.py-extract-admin .overlay {
+    border-radius: 0 8px 8px !important;
+}
+
+.py-extract input,
+.py-extract select,
+.py-extract button {
+    font-size: 12px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 12px;
+    color: rgba(0, 29, 72, 0.8);
+    border: 0px;
+    -webkit-appearance: none;
+    margin: 0 8px 0 0;
+}
+
+.py-extract button {
+    background-color: #0c53a9;
+    color: #fff;
+    font-weight: bold;
+    min-width: 70px;
+    text-align: center;
+    transition: 350ms;
+}
+
+.py-extract button:hover {
+    background-color: #003688;
+}
+
+.py-extract .make-flex {
+    display: flex;
+}
+
+.py-extract .results-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .results-holder {
+        flex-direction: column;
+    }
+}
+
+.py-extract .inner-content h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    padding: 16px;
+}
+
+.py-extract .inner-content h2 button {
+    margin-left: 8px;
+}
+
+.py-extract .content-container {
+    max-width: 1049px;
+    margin: auto;
+}
+
+.py-extract .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+    min-width: 80%;
+    flex-direction: column;
+    background-color: rgba(14, 16, 139, 1);
+    z-index: 2;
+    position: relative;
+    z-index: 3;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 8px #172c36;
+}
+
+.py-extract .overlay--dont-show {
+    border-width: 0;
+    background-color: transparent;
+}
+
+.py-extract .overlay--client {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+}
+
+.py-extract .overlay--client .content {
+    padding: 16px;
+    margin: auto;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid #2E728334;
+    background-color: rgba(0, 211, 255, 0.1);
+    box-shadow: rgba(0, 0, 10, 0.2) 0 0 32px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.py-extract .overlay--client .content .column-title {
+    margin-left: 16px;
+}
+
+.py-extract .client-submit {
+    min-height: 41px;
+    font-size: 16px;
+    min-width: 100px;
+    margin-top: 10px;
+}
+
+.py-extract .card {
+    border-radius: 4px;
+    padding: 0 12px 12px 12px;
+    margin: 8px;
+    width: calc(50% - 40px);
+    background-color: rgba(157, 186, 207, 0.35);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .card {
+        padding: 0 4px 4px 4px;
+        width: 100% !important;
+    }
+}
+
+.py-extract .card--large {
+    width: 100%;
+}
+
+.py-extract .card--small {
+    align-items: center;
+    justify-content: center;
+}
+
+.py-extract .card--small .input-holder {
+    margin-top: 4px !important;
+}
+
+.py-extract .card--name .input-holder {
+    width: calc(50% - 16px);
+    flex-grow: 0;
+}
+
+.py-extract .card--opearating {
+    justify-content: space-between;
+}
+
+.py-extract .card--opearating input {
+    text-align: right;
+}
+
+.py-extract .card--opearating .col {
+    width: 50%;
+}
+
+.py-extract .card--opearating .input-holder {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.py-extract .card--opearating .input-holder label {
+    width: 100%;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.py-extract .card--opearating .input-holder input,
+.py-extract .card--opearating .input-holder select {
+    flex-grow: 1;
+}
+
+.py-extract .card .make-flex {
+    justify-content: flex-start;
+}
+
+.py-extract .card .col {
+    width: 52;
+}
+
+.py-extract .card .col:first-child {
+    width: 48%;
+    justify-content: flex-start;
+}
+
+.py-extract .card .col h3 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.py-extract .card .input-holder {
+    margin-top: 12px;
+    margin: 4px;
+    margin-top: 8px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.py-extract .card .input-holder--operating #op_total {
+    padding-right: 4px;
+}
+
+.py-extract .card .input-holder--operating-total {
+    text-align: right;
+    width: 61%;
+    flex-grow: 0;
+}
+
+.py-extract .card .input-holder--operating-total {
+    font-size: 14px;
+}
+
+.py-extract .card .input-holder--room {
+    z-index: 10;
+}
+
+.py-extract .card input,
+.py-extract .card select {
+    margin: 2px 0 5px;
+    max-width: initial;
+    padding: 6px 0 6px 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .card input,
+    .py-extract .card select {
+        font-size: 10px;
+    }
+}
+
+.py-extract .card .large-input {
+    flex-grow: 1;
+}
+
+.py-extract .required-text {
+    position: relative;
+}
+
+.py-extract .requiredText {
+    display: block;
+    font-size: 11px;
+    color: #3ae1c3;
+    position: absolute;
+    bottom: -23px;
+    left: 8px;
+}
+
+.py-extract .expected-price {
+    margin: 0 0 24px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 16px;
+    justify-content: center;
+}
+
+.py-extract .expected-price:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    background-color: rgba(175, 199, 213, 0.19);
+    display: block;
+    width: 100%;
+}
+
+.py-extract .content {
+    width: auto;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    flex-direction: column;
+    width: calc(100% - 64px);
+}
+
+div.dt-buttons {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky !important;
+    left: 16px;
+}
+
+.dataTables_wrapper .dataTables_length {
+    margin: 8px;
+}
+
+.dataTable {
+    min-width: 100%;
+}
+
+button.dt-button,
+div.dt-button,
+a.dt-button,
+input.dt-button {
+    color: #fff !important;
+    border: none !important;
+    background-color: rgb(0, 79, 186) !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #fff !important;
+}
+
+.dataTables_wrapper .dataTables_filter input[type=search],
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #fff !important;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_info a,
+.dataTables_wrapper label {
+    color: rgba(0, 88, 144, 1) !important;
+}
+
+#py-extract-table_filter {
+    margin: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .content {
+        width: auto;
+        margin: 4px !important;
+        padding: 4px !important;
+        box-sizing: border-box;
+    }
+}
+
+.py-extract .content h2 {
+    margin: 0;
+}
+
+.py-extract #input-form {
+    height: 100%;
+}
+
+.py-extract #results {
+    width: 100%;
+}
+
+.py-extract .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    color: #9fb8ee;
+    z-index: 1;
+    position: relative;
+}
+
+.py-extract .expected-price-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.py-extract .form {
+    display: flex;
+}
+
+.py-extract .column {
+    background-color: rgba(175, 199, 213, 0.19);
+    border: 1px solid rgba(175, 199, 213, 0.19);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 4px 4px 0 4px;
+    width: calc(33.3% - 8px);
+    min-height: 380px;
+    position: relative;
+    color: rgba(0, 34, 108, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .column {
+        width: calc(100% - 8px);
+        margin-bottom: 16px;
+    }
+}
+
+.py-extract .column h2 {
+    margin: 16px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: bold;
+    min-height: 6ch;
+}
+
+.py-extract .column .column-title {
+    margin: 0px;
+    padding: 16px;
+    margin: 0px;
+    min-height: 6ch;
+    width: calc(100% - 39px);
+    margin: 0px !important;
+    border-radius: 5px 5px 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .column .column-title {
+        font-size: 1rem;
+    }
+}
+
+.py-extract .column .img-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgba(175, 199, 213, 0.19);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 220px;
+    box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .column .img-holder {
+        height: 180px;
+    }
+}
+
+.py-extract .column .price {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: bold;
+    color: #0c53a9;
+    width: 100%;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.py-extract .form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.py-extract .table {
+    font-size: 0.75rem;
+    margin: 4px 0 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    min-height: 195px;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .table {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.py-extract .table .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    .py-extract .table .row {
+        width: 50%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+.py-extract .table .row .col {
+    width: 100%;
+    padding: 8px;
+    border-bottom: 0px;
+    font-weight: 500;
+}
+
+.py-extract .table .row .col:first-child {
+    width: 85%;
+}
+
+.py-extract .table .row .col.heading {
+    border-right: 0px;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.py-extract .table .row:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.py-extract .table .row:hover .col {
+    opacity: 1;
+}
+
+.py-extract .data-table-container {
+    color: #fffcff;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.py-extract #data-table-container {
+    margin-top: 22px;
+    border-top: 1px solid rgba(110, 192, 255, 0.4);
+    padding-top: 24px;
+}
+
+.py-extract .link-button {
+    background-color: rgba(58, 225, 195, 0.6);
+    padding: 12px 16px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.py-extract .link-button:hover {
+    box-shadow: 0 0 8px #172c36;
+}
+
+.py-extract .text-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #3ae1c3;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+}
+
+.py-extract .text-button:hover {
+    color: rgba(0, 41, 72, 0.8);
+}
+
+.py-extract .icon-only {
+    background: rgba(255, 255, 255, 0.5);
+    min-width: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.py-extract .icon-only ion-icon {
+    margin: 0px !important;
+    color: #fff !important;
+}
+
+.py-extract .icon-only ion-icon svg path,
+.py-extract .icon-only ion-icon svg polyline {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.py-extract .icon-only:hover {
+    background-color: #c8deff !important;
+}
+
+.py-extract ion-icon {
+    --color: #fff;
+}
+
+.py-extract ion-icon svg path,
+.py-extract ion-icon svg polyline {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.py-extract .client-rooms-row .col:not(.heading) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #172c36;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.py-extract .client-rooms-row .col:not(.heading) div {
+    font-size: 11px;
+}
+
+.py-extract .client-rooms-row .col:not(.heading) .room-holder {
+    margin-right: 4px;
+}
+
+.py-extract .client-rooms-row .col:not(.heading) .room-holder .room-title {
+    width: 70%;
+    text-align: center;
+}
+
+.py-extract .tabs-holder {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    width: 95%;
+}
+
+.py-extract .tabs-holder .tabs {
+    background-color: rgba(43, 43, 45, 0.53);
+    box-shadow: box;
+    margin: 0px;
+    border-radius: 5px 5px 0 0 !important;
+    color: rgba(214, 214, 214, 1);
+}
+
+.py-extract .tabs-holder .selected {
+    opacity: 1;
+    box-shadow: 0 0 8px #172c36;
+    background-color: #0c53a9;
+    color: white;
+}
+
+.py-extract .tab-content {
+    display: none;
+    background-color: #0c53a9;
+}
+
+.py-extract .file-upload-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.py-extract .non-residential {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.py-extract .residential-selection input,
+.py-extract .non-residential input {
+    max-width: 50%;
+    margin: 4px 0;
+}
+
+.py-extract .residential-selection {
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+.py-extract .room-row-comm {
+    min-height: 30px;
+}
+
+.py-extract .room-row-comm input {
+    max-width: 50%;
+    width: 50% !important;
+}
+
+.py-extract .select-room {
+    min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.py-extract .select-room span {
+    color: #000;
+    width: calc(100% - 26px);
+    padding: 13px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.py-extract .select-room .expand-room {
+    color: #fff;
+    padding: 4px;
+    margin-right: 8px;
+    transition: 300ms;
+    overflow: auto;
+    max-height: 20px;
+    position: absolute;
+    top: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    width: 0px;
+    opacity: 0;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.py-extract .select-room .expand-room input,
+.py-extract .select-room .expand-room select {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.24);
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 4px;
+}
+
+.py-extract .select-room .expand-room select {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.py-extract .select-room .expand-room .room-row {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.py-extract .select-room .expand-room .room-row button {
+    width: auto;
+    min-width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.py-extract .select-room .expand-room .room-row:hover .remove-room {
+    opacity: 1;
+}
+
+.py-extract .select-room .expand-room .room-row ion-icon {
+    margin: 0;
+}
+
+.py-extract .select-room .expand-room .room-row .remove-room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.py-extract .select-room .expand-room .room-row .remove-room ion-icon {
+    color: #ff795b;
+}
+
+.py-extract .select-room .expand-room .room-row:nth-child(1) {
+    display: flex;
+}
+
+.py-extract .select-room .expand-room .add-room {
+    cursor: pointer;
+    display: none;
+}
+
+.py-extract .select-room .expand-room .add-room ion-icon {
+    color: #00CEFF;
+    font-size: 24px;
+}
+
+.py-extract .select-room .expand-room .show-room {
+    display: flex;
+}
+
+.py-extract .select-room .expand-room .show-room:first-child .add-room {
+    display: block !important;
+}
+
+.py-extract .select-room .room-row--dropdown,
+.py-extract .select-room .room-row-comm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.py-extract .select-room input,
+.py-extract .select-room label {
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    min-width: 20px;
+}
+
+.py-extract .select-room label {
+    flex-shrink: 2;
+    min-width: 30%;
+    text-align: right;
+}
+
+.py-extract .select-room input {
+    display: inline;
+    border-radius: 0;
+    flex-grow: 2;
+    margin-right: 4px;
+}
+
+.expand {
+    max-height: 250px !important;
+    width: 180px !important;
+    opacity: 1 !important;
+}
+
+.collapse {
+    max-height: 0;
+}
+
+.error {
+    color: rgba(215, 39, 8, 0.8);
+}
+
+.delete {
+    background-color: rgba(215, 39, 8, 0.8) !important;
+    color: #fff !important;
+}
+
+.delete ion-icon {
+    color: #fff;
+}
+
+.page-changer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+
+.popupHolder {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(21, 37, 43, 0.95);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.popupHolder section {
+    width: 100%;
+}
+
+.popupHolder .no-results {
+    width: 100%;
+}
+
+.popupHolder .popup {
+    background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #172c36;
+    min-width: 70%;
+    min-height: 70%;
+    max-width: 95%;
+    max-height: 95%;
+    height: 100%;
+    overflow: auto;
+}
+
+.popupHolder .popup .popupContent {
+    padding: 32px 16px 16px;
+    width: 100%;
+    height: calc(100% - (32px + 16px));
+    overflow: auto;
+}
+
+.popupHolder .popup .popupContent .dataTables_wrapper {
+    height: calc(100% - 65px);
+}
+
+.popupTableContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* height: 47%; */
+}
+
+.popupTableContainer #verificationTable_wrapper {
+    height: 100%
+}
+
+.popupHolder .popup .close {
+    position: absolute;
+    right: 0px;
+    background: url("../imgs/close-circle-outline.svg") no-repeat 50% 50%;
+    background-size: 80%;
+    min-width: 25px;
+    width: 25px;
+    font-size: 12px;
+    height: 25px;
+    background-color: rgba(58, 225, 195, 0.6);
+    padding: 5px 10px;
+    font-size: 11px;
+    color: #003b48;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 0;
+    border-radius: 0px 5px 0 5px;
+    color: rgba(23, 44, 54, 0.5);
+}
+
+#verificationTable_wrapper {
+    width: 98%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dataTables_wrapper {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_paginate a {
+    padding: 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dataTables_wrapper .dataTables_filter input[type=search],
+.dataTables_wrapper .dataTables_length select {
+    margin: 0px 4px !important;
+    padding: 6px;
+    height: 30px;
+}
+
+.dataTables_wrapper .dataTables_length {
+    position: sticky;
+    left: 0;
+}
+
+.dataTables_wrapper .dataTables_length label,
+.dataTables_wrapper .dataTables_filter label {
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    position: sticky;
+    margin: 8px;
+    left: calc(100% - 328px);
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    position: sticky;
+    left: calc(100% - 700px);
+}
+
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_info a,
+.dataTables_wrapper label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dataTables_wrapper .dataTables_length select {
+    margin: 0 4px 0 4px;
+}
+
+.dataTables_wrapper .dataTable {
+    background-color: rgba(0, 41, 72, 0.8);
+}
+
+.dataTables_wrapper .dataTable th {
+    color: #fff;
+}
+
+.dataTables_wrapper .dataTable td,
+.dataTables_wrapper .dataTable tr {
+    color: #172c36;
+    font-size: 12px;
+}
+
+.dataTables_wrapper .dataTable .odd {
+    opacity: 0.9;
+}
+
+*/ .success-message {
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.makeBlack {
+    color: #222;
+}
+
+.makeBlack div {
+    color: #333;
+}
+
+td .client-rooms-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 150px;
+}
+
+td .client-rooms-row .room-holder {
+    margin-right: 4px;
+}
+
+.room-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.room-holder div {
+    background-color: #fff;
+    padding: 3px;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.room-holder .room-title {
+    background-color: #eaedf1;
+    border-radius: 3px 0 0 3px;
+    width: 50%;
+}
+
+.room-holder .room-value {
+    background-color: #bee1e8;
+    border-radius: 0 3px 3px 0;
+    width: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin-right: 16px;
+}
+
+.dot-green {
+    background-color: #40f140;
+}
+
+.dot-amber {
+    background-color: #f1d640;
+}
+
+.dot-red {
+    background-color: #f14040;
+}
+
+#avgChart {
+    position: relative;
+    width: 98%;
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 16px auto;
+}
+
+#avgChart .container {
+    position: relative;
+    min-height: 130px;
+}
+
+#avgChart .base-line {
+    height: 10px;
+    background-color: rgba(204, 204, 204, 0.8);
+    border-radius: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#avgChart .min,
+#avgChart .avg,
+#avgChart .max {
+    position: absolute;
+    font-size: 10px;
+    width: 80px;
+    background-color: rgba(175, 199, 213, 0.1);
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    bottom: 8px;
+    padding: 4px;
+}
+
+#avgChart .min div,
+#avgChart .avg div,
+#avgChart .max div {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+#avgChart .min {
+    left: 0;
+}
+
+#avgChart .max {
+    right: 0;
+}
+
+#avgChart .avg {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#avgChart .value {
+    position: absolute;
+    top: 37px;
+    text-align: center;
+    color: #0c53a9;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: calc(100% - 26px);
+    line-height: 14px;
+    transition: 750ms;
+    left: 0;
+    opacity: 0;
+}
+
+#avgChart .value span {
+    font-size: 12px;
+    line-height: 10px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 34, 108, 0.8);
+    display: block;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+#avgChart .value ion-icon {
+    transform: rotate(180deg);
+}
+
+.final-msg {
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+}
+
+.expected-price-card {
+    margin: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px !important;
+    width: calc(100% - 32px) !important;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background-color: rgba(175, 199, 213, 0.29) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .expected-price-card {
+        margin: 0 16px 16px 16px !important;
+        flex-wrap: wrap !important;
+        width: calc(100% - 64px) !important;
+        width: 100%;
+    }
+    .expected-price-card input,
+    .expected-price-card select {
+        max-width: inherit !important;
+        width: calc(100% - 24px);
+    }
+}
+
+.expected-price-card button {
+    margin-top: 29px;
+}
+
+.expected-price-card label {
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .expected-price-card label {
+        text-align: left;
+    }
+}
+
+.expected-price-card .input-holder {
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .expected-price-card .input-holder {
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
+.expected-price-card input,
+.expected-price-card select {
+    margin-right: 4px;
+    max-width: 100px;
+}
+
+.expected-price-card button {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .expected-price-card button {
+        margin: auto;
+        margin-top: 12px;
+    }
+}
+
+.blur {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid #2E728334 !important;
+    background-color: rgba(0, 211, 255, 0.1) !important;
+    box-shadow: rgba(0, 0, 10, 0.2) 0 0 32px !important;
+}
+
+#base-inlin-info {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.room-select-container {
+    position: relative;
+}
+
+.property-info-dropdown-icon {
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    bottom: 0;
+}
+
+.authenticationForm {
+    max-height: 175px;
+    height: auto;
+    width: 200px;
+    position: absolute;
+    border: 1px solid #ddd;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 0 16px 8px;
+}
+
+.authenticationForm form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.authenticationForm input {
+    margin: 8px;
+    padding: 4px;
+    width: 90%;
+}
+
+.authenticationForm button {
+    padding: 8px;
+    width: 50%;
+    background-color: #0c53a9;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    margin: 8px;
+}
+
+.authenticationForm h2 {
+    color: rgba(0, 34, 108, 0.8);
+    margin: 16px 0 8px;
+}
+
+#viewAllData-table_length {
+    position: sticky;
+    left: 300px;
+}
+
+
+/*# sourceMappingURL=admin_style.css.map */

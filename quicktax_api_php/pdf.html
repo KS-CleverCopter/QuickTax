@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .pdfArea {
+        border: 1px solid #ddd;
+        position: relative;
+        margin: auto;
+        height: 2500px;
+        font-size: 12px;
+        /* font-family: Helvetica, sans-serif, Arial; */
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .title-bold {
+        font-weight: bold;
+      }
+
+      .large-text {
+        font-size: 15px;
+      }
+
+      div {
+        /* border: 1px solid rgb(30, 173, 149); */
+      }
+
+      .boundingBox {
+        /* border:1px solid black; */
+        position: absolute;
+        background-color: rgba(113, 71, 197, 0.2);
+        /* opacity: 0.4; */
+      }
+
+      .txt {
+        position: absolute;
+      }
+
+      .yFlatRow {
+        background-color: rgba(71, 197, 149, 0.2);
+        position: absolute;
+        width: 100%;
+      }
+
+      .levelOne {
+        padding: 8px;
+        margin: 8px;
+        background-color: rgba(48, 129, 129, 0.3);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pdfArea" id="pdfArea"></div>
+    <div id="output"></div>
+    <div id="printRes"></div>
+    <div id="outputStatus"></div>
+  </body>
+  <script src="pdf_js/pdfscript.js" charset="UTF-8"></script>
+</html>

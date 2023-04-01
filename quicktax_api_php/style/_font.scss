@@ -1,0 +1,18 @@
+//mixin for font property
+
+
+@mixin fontStyle($fontSize, $lineHeight, $fontWeight, $color, $fontFamily) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    color: $color;
+    @if $fontFamily == 1{
+        font-family: 'Roboto', sans-serif;
+    }
+    @else if $fontFamily == 2{
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    @else if $fontFamily == 3 {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
